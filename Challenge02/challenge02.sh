@@ -32,7 +32,7 @@ append_file(){
 
 
 #main
-echo "Hello! it is currently $date_time"
+echo "Copying files to syslog-${date_time}"
 echo ""
 echo "============================ Copying System Log Files ====================================="
 echo ""
