@@ -30,12 +30,14 @@ dir_path_exists(){
 
 
 ##############################################################################
-# Main Function
-# If both path exisits and permision input is a number 
-# Function will run chmod 
+# Change File Function
+# If path exisits then run chmod
 ##############################################################################
 change_files_settings(){
     dir_path_exists
     chmod "$per" "$dirpath"
 }
+
+#main
 change_files_settings
+#end
