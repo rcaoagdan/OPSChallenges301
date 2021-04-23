@@ -19,10 +19,11 @@ read -r per
 # Fuction use to check if Directory input is correct
 # If path exists then it runs Permision Function
 # If path does not exsits, then user will be prompted 
+# ls -l prints directory contents and permission settings
 ##############################################################################
 dir_path_exists(){
     if [ -f "$dirpath" ]; then
-    ls -l "$dirpath"
+    ls -l 
     else
     echo "ERROR: Directory does not exists"
     fi
