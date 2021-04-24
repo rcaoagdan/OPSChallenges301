@@ -12,6 +12,7 @@
 ##############################################################################
 echo "Hello enter a directory path:"
 read -r dirpath
+
 echo "Enter Permission Number:"
 read -r per 
 
@@ -22,7 +23,7 @@ read -r per
 # ls -l prints directory contents and permission settings
 ##############################################################################
 dir_path_exists(){
-    if [ -f "$dirpath" ]; then
+    if [[ -d "$dirpath" ]]; then
     ls -l 
     else
     echo "ERROR: Directory does not exists"
