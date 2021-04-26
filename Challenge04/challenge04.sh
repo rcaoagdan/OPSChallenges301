@@ -10,25 +10,25 @@
 # Function used to print out greatest saying in the world
 ##############################################################################
 greatest_saying_ever(){
-    echo "Hello World!"
     echo " "
+    echo "Hello World!"
     main_menu
 }
 ##############################################################################
 # Function used to ping computers loopback address
 ##############################################################################
 ping_myself(){
-    ping -c 4 localhost
     echo " "
+    ping -c 4 localhost
     main_menu
 }
 ##############################################################################
 # Function used to print out IP Info
 ##############################################################################
 ip_info(){
+    echo " "
     echo "Printing IP Info"
     ifconfig
-    echo " "
     main_menu
 }
 
@@ -36,14 +36,15 @@ ip_info(){
 # Function used to "exit"
 ##############################################################################
 fake_exit(){
-    echo "Welcome To Hotel California!!"
     echo " "
+    echo "Welcome To Hotel California!!"
     main_menu
 }
 ##############################################################################
 # Function used secretly exit
 ##############################################################################
 real_exit(){
+    echo " "
     echo "You have found the secret"
     echo "Have a nice day!"
     exit
