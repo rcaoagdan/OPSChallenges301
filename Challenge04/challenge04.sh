@@ -50,6 +50,17 @@ real_exit(){
     exit
 }
 ##############################################################################
+# Function 404 error
+##############################################################################
+error_glitch(){
+    echo " "
+    echo "ERROR ERROR ERROR"
+    echo "ERROR ERROR ERROR"
+    echo "Glitch in the matrix"
+    echo "Exiting for safety"
+    exit
+}
+##############################################################################
 # Main 
 ##############################################################################
 main_menu(){
@@ -70,10 +81,12 @@ main_menu(){
             ip_info
         elif [ "$mainsel" == 4 ] ; then
             fake_exit
-        elif [ "$mainsel" == 5 ] ; then
+        elif [ "$mainsel" == "127.0.0.1" ] ; then
             real_exit
+        elif [ "$mainsel" == 404 ] ; then
+            error_glitch
         else 
-            echo -e  "\n Please select a correct option" 
+            echo -e  "\n Please make a correct option" 
             main_menu
         fi
     done
