@@ -24,7 +24,7 @@ read -r per
 ##############################################################################
 dir_path_exists(){
     if [[ -d "$dirpath" ]]; then
-    ls -l 
+    ls -la
     else
     echo "ERROR: Directory does not exists"
     fi
