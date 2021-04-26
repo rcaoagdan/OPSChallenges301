@@ -1,5 +1,5 @@
 #!/bin/sh
-#
+
 #Script: Ops Challenge 04
 #Author: Ray Caoagdan
 #Date of Last Revision: 04/25/2021
