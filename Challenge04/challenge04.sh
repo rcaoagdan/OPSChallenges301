@@ -45,7 +45,7 @@ fake_exit(){
 ##############################################################################
 real_exit(){
     echo " "
-    echo "You have found the secret"
+    echo "There is no place like home!"
     echo "Have a nice day!"
     exit
 }
