@@ -15,10 +15,12 @@ syslog_function(){
     echo "The currents contents of System Logs:"
     echo " "
     cat /var/log/syslog
+    echo " "
     echo -e "\nClearing  logs now"
     echo " "
     >/var/log/syslog
     echo " "
+    echo -e "\nContents after Clearing logs"
     cat /var/log/syslog
 }
 ##############################################################################
@@ -33,6 +35,7 @@ wtmp_function (){
     echo -e "\nClearing  WTMP logs now"
     echo " "
     >/var/log/wtmp
+    echo -e "\nContents after Clearing logs"
     cat /var/log/wtmp
 }
 ##############################################################################
