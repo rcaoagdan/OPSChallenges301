@@ -21,7 +21,7 @@ hardware=subprocess.getoutput(["lshw -short"])
 #Main
 ##############################################################################
 identify_yourself= input("hello who are you? ")
-print ("welcome", identify_yourself , '\n')
+print ("Welcome", identify_yourself , '\n')
 print ("The current user is: \n", myexistence , '\n')
 print ("Displaying Network info: \n" , netinfo , '\n')
 print ("The Current Hardware installed: \n", hardware , '\n')
