@@ -20,9 +20,7 @@ dir_input=input("Please input a directory? ")
 ##############################################################################
 
 for (root, dirs, files) in os.walk(dir_input, topdown=True):
-    
-    print ("the root is", root)
-    print ("sub directory", dirs)
-    print ("the file(s)", files)
-
-
+    for name in files:
+            print(os.path.join(root, name))
+    for name in dirs:
+            print(os.path.join(root, name))
