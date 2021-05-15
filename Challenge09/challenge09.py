@@ -13,6 +13,9 @@ varlist = ["Motherboard", "CPU", "RAM", "Memory", "Cooler", "Fans", "GPU", "PSU"
 ##############################################################################
 # print elements of list
 ##############################################################################
+print(" ")
+print(varlist)
+print(" ")
 print(varlist[3]) #prints fourth element in list
 print(" ")
 print(varlist[5:10]) #prints 6-10
