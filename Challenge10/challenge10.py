@@ -26,10 +26,10 @@ def check_variable_number():
 ##############################################################################
 def fist_check():
     if a <= b: 
-        print("A might be greater than B, but lets double check")
+        print("A might be less than B, but lets double check")
         check_variables_are_equal()
     elif a >=b:
-        print ("A might be less than B, but lets double check")
+        print ("A might be greater than B, but lets double check")
         check_variables_are_equal()
     else:
         print (how)
