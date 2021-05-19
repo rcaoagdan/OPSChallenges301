@@ -19,7 +19,7 @@ def check_variable_number():
     if a.isnumeric() and b.isnumeric(): 
         fist_check()
     else:
-        print('Error: Incorrect input detected, exititing now.')
+        print('Error: Incorrect input detected, exiting now.')
 
 ##############################################################################
 # Function to check if numbers are equal, less than, greater than
