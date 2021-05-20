@@ -6,6 +6,7 @@
 #Purpose: Python File Handling
 
 import os
+
 ##############################################################################
 # Create new file 
 ##############################################################################
@@ -35,8 +36,6 @@ print( )
 print("Shall we delete the file?")
 response=input('Y-Yes | N-No: ')
   
-   
-
 def delete_confirm():
     if response == "Y" or response == "y" or response =="YES" or response =="yes" or response =="Yes" or response =="YEs" or response =="YeS" or response =="yES":
         print("Deleting file now \n")
@@ -47,8 +46,6 @@ def delete_confirm():
     else:
         print("Incorrect selection")
        
-
-
 ##############################################################################
 # Main
 ##############################################################################
