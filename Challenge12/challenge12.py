@@ -10,6 +10,7 @@
 ##############################################################################
 import psutil 
 
+
 ##############################################################################
 #Main
 ##############################################################################
@@ -23,7 +24,23 @@ print('irq: Time Spent Hardware interrupts')
 print('softirq: To Spent Software Interrupts')
 print('steal: Time spent bu other O/S running in a virtuialized enviorment ')
 print('guest_nice: Time Spent running a virtual CPU for guest OS under control of Linux Kernel \n')
-print(psutil.cpu_times(), '\n')
+
+##############################################################################
+#Saves information to text file
+##############################################################################
+testfile = open("newfile.txt", "w")
+psinfo=psutil.cpu_times()
+strpsinfo=str(psinfo) #converts float value to string
+testfile.writelines(strpsinfo)
+testfile.close()
+
+##############################################################################
+#Print information from text file
+##############################################################################
+testfile = open("newfile.txt", "r+")
+print()
+print(testfile.readline())
+testfile.close
 
 ##############################################################################
 #End
