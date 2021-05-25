@@ -21,8 +21,8 @@ print('idle: Time Spent in idle tasks')
 print('iowait: Time Spent waiting for I/O to comeplte')
 print('irq: Time Spent Hardware interrupts')
 print('softirq: To Spent Software Interrupts')
-print('steal: Time spent bu other O/S running in a virtuialized enviorment \n')
-print('guest_nice: Time Spent running a virtual CPU for guest OS under control of Linux Kernel')
+print('steal: Time spent bu other O/S running in a virtuialized enviorment ')
+print('guest_nice: Time Spent running a virtual CPU for guest OS under control of Linux Kernel \n')
 print(psutil.cpu_times(), '\n')
 
 ##############################################################################
