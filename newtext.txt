@@ -1,4 +1,0 @@
-Hello, World 
-Number 1 
-Number 2 
-Nubmer 3 
