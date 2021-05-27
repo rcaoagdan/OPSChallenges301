@@ -22,6 +22,7 @@ code301 = ("Site Moved Permanently \n")
 code403 = ("ERROR:Forbidden \n")
 code404 = ("ERROR:NOT FOUND \n")
 code405 = ("ERROR:Method Not Allowed \n")
+unknown = ("Status Uknown")
 ##############################################################################
 # Prompts User to enter a URL 
 ##############################################################################
@@ -81,7 +82,7 @@ def get_request():
     elif getrequest.status_code == 404:
         print(code404)
     else:
-        print('Status Not Known')
+        print(unknown)
         
     
 ##############################################################################
@@ -97,7 +98,7 @@ def post_request():
     elif postrequest.status_code == 405:
         print(code405)
     else:
-        print('Status Unknown')
+        print(unknown)
     
 
 ##############################################################################
@@ -112,7 +113,7 @@ def put_request():
     elif putrequest.status_code == 405:
         print(code405)
     else:
-        print('Status Unknown')
+        print(unknown)
 
 ##############################################################################
 # Delete Request  
@@ -129,9 +130,9 @@ def delete_request():
     elif deleterequest.status_code == 204:
         print(code204)
     elif deleterequest.status_code == 405:
-        print(code405, '\n')
+        print(code405)
     else:
-        print('status unknown')
+        print(unknown)
 
 
 ##############################################################################
@@ -140,6 +141,7 @@ def delete_request():
 def head_request():
     print( )
     headrequest = requests.head(website_url)
+    print(headrequest.status_code)
     print(headrequest.url)
     if headrequest.status_code == 200:
         print(code200)
@@ -148,7 +150,7 @@ def head_request():
     elif headrequest.status_code > 400 and headrequest < 500:
         print('ERROR')
     else:
-        print('Status Unknown')
+        print(unknown)
 
 
 ##############################################################################
@@ -165,7 +167,7 @@ def patch_request():
     elif patchrequest.status_code == 405:
         print(code405)
     else:
-        print ('Status Unknown')
+        print (unknown)
 
 ##############################################################################
 # Options Request  
@@ -181,7 +183,7 @@ def options_request():
     elif optrequest.status_code == 405:
         print(code405)
     else:
-        print ('Status Unknown')
+        print(unknown)
 
 ##############################################################################
 # Main 
