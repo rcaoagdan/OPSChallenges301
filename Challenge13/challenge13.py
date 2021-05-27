@@ -75,6 +75,7 @@ def get_request():
     print( )
     getrequest = requests.get(website_url)
     print(getrequest.url)
+    print(getrequest.headers, '\n')
     if getrequest.status_code == 200:
         print(code200)
     elif getrequest.status_code == 301:
@@ -91,6 +92,7 @@ def get_request():
 def post_request():
     postrequest = requests.post(website_url)
     print(postrequest.url)
+    print(postrequest.headers, '\n')
     if postrequest.status_code == 200:
         print(code200)
     elif postrequest.status_code == 403:
@@ -107,7 +109,7 @@ def post_request():
 def put_request():
     putrequest = requests.put(website_url)
     print(putrequest.url)
-    print(putrequest.status_code)
+    print(putrequest.headers,'\n')
     if putrequest.status_code == 200:
         print(code200)
     elif putrequest.status_code == 405:
@@ -123,6 +125,7 @@ def delete_request():
     print('request:DELETE ')
     deleterequest = requests.delete(website_url)
     print(deleterequest.url)
+    print(deleterequest.headers,'\n')
     if deleterequest.status_code == 200:
         print(code200)
     elif deleterequest.status_code == 202:
@@ -141,8 +144,8 @@ def delete_request():
 def head_request():
     print( )
     headrequest = requests.head(website_url)
-    print(headrequest.status_code)
     print(headrequest.url)
+    print(headrequest.headers,'\n')
     if headrequest.status_code == 200:
         print(code200)
     elif headrequest.status_code == 301:
@@ -160,6 +163,7 @@ def patch_request():
     print()
     patchrequest = requests.patch(website_url)
     print(patchrequest.url)
+    print(patchrequest.headers,'\n')
     if patchrequest.status_code == 200:
         print(code200)
     elif patchrequest.status_code == 403:
@@ -176,6 +180,7 @@ def options_request():
     print()
     optrequest = requests.options(website_url)
     print(optrequest.url)
+    print(optrequest.headers,'\n')
     if optrequest.status_code == 200:
         print(code200)
     elif optrequest.status_code == 403:
@@ -189,6 +194,7 @@ def options_request():
 # Main 
 ##############################################################################
 request_response()
+
 ##############################################################################
 # End
 ##############################################################################
