@@ -16,7 +16,7 @@ Below are Ops Challenges I have completed during Ops and Cybersecurity 301. Thes
 
 [Challenge 7: Directory Creation -Pyton ](https://github.com/rcaoagdan/OPSChallenges301/blob/main/Challenge07/challenge07.py)
 
-[Challenge 8: Add User to Active Directory - Powershell ](https://github.com/rcaoagdan/OPSChallenges301/blob/main/Challenge08/challenge08.py)
+[Challenge 8: Add User to Active Directory - Powershell ](https://github.com/rcaoagdan/OPSChallenges301/blob/main/Challenge08/challenge08.ps1)
 
 [Challenge 9: Python Collection](https://github.com/rcaoagdan/OPSChallenges301/blob/main/Challenge09/challenge09.py)
 
